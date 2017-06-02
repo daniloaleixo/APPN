@@ -25,3 +25,72 @@
 [info] Public Directory: /
 [info] 
 [info] Server listening at: http://localhost:5000
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] CLI Version:  3.6.1
+[debug] Platform:     linux
+[debug] Node Version: v7.8.0
+[debug] Time:         Thu Jun 01 2017 23:16:54 GMT-0300 (BRT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/73cSM2yMPoKFbdnZtbUIJEsx8isTsJvA5kwHNsXpD5Murp0MDCmjBOJF85eYuqnm',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Jun 01 2017 23:16:55 GMT-0300 (BRT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/appn-f95e8  
+ Thu Jun 01 2017 23:16:55 GMT-0300 (BRT)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/appn-f95e8/tokens  
+ Thu Jun 01 2017 23:16:56 GMT-0300 (BRT)
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'appn-f95e8'...
+[info] 
+[info] i  deploying database, functions, hosting
+[info] ✔  database: rules ready to deploy.
+[debug] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "firebase-admin": "~4.1.2",
+    "firebase-functions": "^0.5"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/appn-f95e8?view=CONSUMER_VIEW  
+ Thu Jun 01 2017 23:16:59 GMT-0300 (BRT)
+[debug] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/appn-f95e8?view=CONSUMER_VIEW  
+ Thu Jun 01 2017 23:16:59 GMT-0300 (BRT)
+[debug] <<< HTTP RESPONSE 200
+[info] ✔  runtimeconfig: all necessary APIs are enabled
+[debug] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/appn-f95e8  
+ Thu Jun 01 2017 23:17:01 GMT-0300 (BRT)
+[debug] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/appn-f95e8/apiKeys  
+ Thu Jun 01 2017 23:17:01 GMT-0300 (BRT)
+[debug] <<< HTTP RESPONSE 200
+[debug] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/appn-f95e8/configs  
+ Thu Jun 01 2017 23:17:37 GMT-0300 (BRT)
+[debug] <<< HTTP RESPONSE 200
+[debug] > [functions] runtime config materialized as: {
+  "firebase": {
+    "databaseURL": "https://appn-f95e8.firebaseio.com",
+    "storageBucket": "appn-f95e8.appspot.com",
+    "apiKey": "AIzaSyBCBQgzvqD-LCzoeWltgMqWo36ZZ2aL9EI",
+    "authDomain": "appn-f95e8.firebaseapp.com"
+  }
+}
+[debug] > [functions] parsed triggers: []
+[info] i  hosting: preparing / directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/appn-f95e8/uploads/-Kla_rgmxFtbEqjeeisO?fileCount=4884&message=  
+ Thu Jun 01 2017 23:18:15 GMT-0300 (BRT)
