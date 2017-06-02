@@ -23,6 +23,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Material Design Lite</title>
 
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+
+
+    <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="images/android-desktop.png">
@@ -66,15 +79,6 @@
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title title-big">APPN</span>
           <div class="mdl-layout-spacer"></div>
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search">
-              <label class="mdl-textfield__label" for="search">Enter your query...</label>
-            </div>
-          </div>
           <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
             <i class="material-icons">more_vert</i>
           </button>
@@ -118,10 +122,38 @@
       </div>
       <main class="mdl-layout__content mdl-color--grey-100">
         <div class="mdl-grid demo-content">
-          <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-          Gasto pro mês
+          <!-- <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid"> -->
+              <div class="row">
+                      <div class="col s12 m6">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="images/pastel-de-queijo.jpg">
+                          </div>
+                          <div class="card-content">
+                            <p>Previsão de vendas de Pastel de Queijo hoje:</p>
+                          </div>
+                          <div class="card-action">
+                            <a href="#">200 Unidades</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s12 m6">
+                        <div class="card">
+                          <div class="card-image">
+                            <img src="images/caldo_de_cana.jpg">
+                          </div>
+                          <div class="card-content">
+                            <p>Previsão de vendas de Caldo de Cana hoje:</p>
+                          </div>
+                          <div class="card-action text-center">
+                            <a href="#">50l</a>
+                          </div>
+                        </div>
+                      </div>
+                <!-- </div> -->
           </div>
           <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
+            <h3>Histórico de vendas</h3>
             <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
               <use xlink:href="#chart">
             </svg>
