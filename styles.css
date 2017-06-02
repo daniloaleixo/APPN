@@ -17,6 +17,15 @@
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.demo-layout .demo-navigation .mdl-navigation__link {
+  max-height: 50px !important;
+}
+
 .demo-avatar {
   width: 48px;
   height: 48px;
